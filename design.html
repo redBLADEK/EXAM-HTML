@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+	  	<link rel="stylesheet" href="style.css">
+		<title>Design</title> 
+		<style>
+			h1 { 
+				margin: 22px 0 0 40px;
+				color: ivory;
+				text-transform: uppercase;
+				font-size: 30px;
+			}
+		   </style>
+  </head>
+  <body>
+	<header class="home">
+		<h1>Mobilkin</h1>
+		<nav>
+		  	<ul class="menu">
+				<li><button class="current">HOME</button></li>
+				<li><button>SERVICES</button></li>
+				<li><button>CATALOG</button></li>
+				<li><button>ABOUT</button></li>
+				<li><button>CONTACT</button></li>
+		  	</ul>
+		</nav>
+	</header>
+	<iframe src="advertisement.html" width="1017px" height="100"></iframe>
+	<section class="slider">
+		<div class="item" id="slide1">
+			<img src="assets/iPhone-Vertical.png" id="img_1" alt="phone1"  onClick="onoff1(this.id)">
+			<img src="assets/iPhone-Horizontal.png" id="img_2" alt="phone2"  onClick="onoff2(this.id)">
+			<img class="hide" src="assets/Phone Vertical.png" id="img_3" alt="phone1">
+			<img class="hide" src="assets/Phone Horizontal.png" id="img_4" alt="phone2">
+		</div>
+		<div class="item" id="slide2">
+			<img src="assets/Slide-2.png" alt="Slide-2">
+		</div>
+		<a class="prev" onclick="minusSlide()"><img src="assets/1_previous.png"></a>
+		<a class="next" onclick="plusSlide()"><img src="assets/1_next.png"></a>
+	</section>
+    <section class="contact">
+	    <h2>Get a Quote</h2>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <div class="quote">
+            <form action="" method="get">
+                <input placeholder="Name (Required)" type="text" required maxlength="50">
+                <input placeholder="Email (Required)" type="email" required>
+                <input placeholder="Subject" type="text">
+                <textarea class="describe_detail" placeholder="Describe your project in detail..." type="text"></textarea>
+				<input class="submit" type="submit" value="Submit">
+			</form>
+        <div class="contact_information">
+            <h3>Contact Information</h2>
+            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+            <div class="info">
+                <img  src="assets/location.png" alt="location"><p>Elm St. 14/05 Lost City</p>
+                <img  src="assets/phone.png" alt="phone"><a href="tel: 03528 331 86 35"> 03528 331 86 35</a>
+                <img  src="assets/mail.png" alt="mail"> <a href="mailto: info@mail.com"> info@mail.com</a>
+            </div>
+        </div>
+        </div>
+    </section>
+	<script src="script.js"></script>
+  </body>
+</html>
